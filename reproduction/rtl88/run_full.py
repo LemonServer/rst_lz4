@@ -1,4 +1,4 @@
-import sys,os,json,time,traceback,argparse,pickle
+import sys,os,json,time,traceback,argparse,pickle,fcntl
 from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor,wait,FIRST_COMPLETED
 root=Path(os.environ['RST_HW_ROOT']);sys.path.insert(0,str(root/'tools'))
@@ -20,7 +20,7 @@ runtime.run_runtime_harness=reuse_verified_runtime_log
 args=v.parse_args(); artifacts=None
 originals={n:getattr(v,n) for n in ['run_hardware_roundtrip','run_sv_decompressor_check','_run_direct_latency_measurement']}
 out=root/'build/full88';(out/'results').mkdir(parents=True,exist_ok=True)
-def work(name):
+def _work_unlocked(name):
  p=Path(name);dest=out/'results'/(p.stem+'.json')
  if dest.exists():
   r=json.loads(dest.read_text())
@@ -34,18 +34,24 @@ def work(name):
     if _cp.exists(): return pickle.loads(_cp.read_bytes())
     print('STAGE_START',p.name,_fn.__name__,flush=True)
     value=_fn(*a,**kw)
-    _cp.write_bytes(pickle.dumps(value))
+    tmp=_cp.with_suffix('.checkpoint.tmp'); tmp.write_bytes(pickle.dumps(value)); tmp.replace(_cp)
     print('STAGE_DONE',p.name,_fn.__name__,flush=True)
     return value
    setattr(v,fn,cached)
   loaded=v.load_paged_input(root,p,5000)
   r=v._verify_input(args=args,root=root,loaded_input=loaded,pages_requested=5000,artifacts=artifacts)
   r['elapsed_seconds']=time.time()-start
-  dest.write_text(json.dumps(r))
+  tmp=dest.with_suffix('.json.tmp'); tmp.write_text(json.dumps(r)); tmp.replace(dest)
   return {'name':p.name,'status':r['status'],'seconds':round(time.time()-start)}
  except Exception:
   err=traceback.format_exc();(out/'results'/(p.stem+'.error.txt')).write_text(err)
   return {'name':p.name,'status':'FAIL','error':err}
+def work(name):
+ lockdir=out/'locks';lockdir.mkdir(exist_ok=True)
+ with (lockdir/(Path(name).stem+'.lock')).open('a') as lock:
+  fcntl.flock(lock,fcntl.LOCK_EX)
+  return _work_unlocked(name)
+
 if __name__=='__main__':
  import multiprocessing as mp
  artifacts=v._prepare_shared_artifacts(args,root,2)
