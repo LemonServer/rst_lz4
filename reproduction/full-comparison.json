@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "datasets": 88,
+  "suites": 7,
+  "pages_per_sweep": 435461,
+  "metrics": {
+    "rst": 3.4207404814992395,
+    "asic_deflate": 3.278887048265985,
+    "software_deflate": 3.8338899637522683
+  },
+  "stage_v": [
+    {
+      "dictionary_bytes": 64,
+      "measured": 3.095198709143001,
+      "author_checkpoint": 3.095199,
+      "absolute_difference": -2.908569989301668e-07,
+      "datasets": 88,
+      "pages": 435461
+    },
+    {
+      "dictionary_bytes": 128,
+      "measured": 3.4207404814992395,
+      "author_checkpoint": 3.42074,
+      "absolute_difference": 4.814992395907325e-07,
+      "datasets": 88,
+      "pages": 435461
+    },
+    {
+      "dictionary_bytes": 192,
+      "measured": 3.541648366154518,
+      "author_checkpoint": 3.541648,
+      "absolute_difference": 3.661545182609416e-07,
+      "datasets": 88,
+      "pages": 435461
+    },
+    {
+      "dictionary_bytes": 256,
+      "measured": 3.561355055253009,
+      "author_checkpoint": 3.561355,
+      "absolute_difference": 5.525300927899934e-08,
+      "datasets": 88,
+      "pages": 435461
+    }
+  ],
+  "main_stage_v_128B_per_dataset_equal": true,
+  "stage_v_recomputed": true,
+  "paper_rounded_values": {
+    "rst": 3.4,
+    "asic_deflate": 3.3,
+    "software_deflate": 3.84
+  },
+  "stage_IV_A_display_alias": {
+    "measured_bytes": 80,
+    "displayed_bytes": 64
+  }
+}

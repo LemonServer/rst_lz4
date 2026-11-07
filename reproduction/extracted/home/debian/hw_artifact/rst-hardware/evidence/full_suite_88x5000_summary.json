@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "mode": "directory-merged",
+  "target": "data/5kcorrectdumps",
+  "pages_requested_per_dump": 5000,
+  "aggregate": {
+    "inputs": 88,
+    "passed": 88,
+    "failed": 0,
+    "selected_pages": 435461,
+    "selected_bytes": 1783648256,
+    "short_input_count": 1,
+    "pooled_hardware_ratio": 2.728502407582669
+  },
+  "paper_metric_summary": {
+    "benchmark_geomeans": {
+      "ratio": {
+        "hardware": 3.1962781737529933,
+        "cpp": 3.208950070575615
+      },
+      "compressor_bpc": 1.5432854567867864,
+      "compressor_gbps_at_2_5ghz": 3.858213641966966,
+      "decompressor_bpc": 7.424988442343712,
+      "decompressor_gbps_at_2_5ghz": 18.56247110585928,
+      "decompressor_critical64_cycles": 42.494574213201915,
+      "decompressor_critical64_ns_at_2_5ghz": 16.997829685280767,
+      "decompressor_full_chunk_cycles": 52.00822520945135,
+      "decompressor_full_chunk_ns_at_2_5ghz": 20.803290083780542
+    },
+    "suite_geomean_of_geomeans": {
+      "ratio": {
+        "hardware": 3.41085314118697,
+        "cpp": 3.4241938934502296,
+        "delta_pct": -0.38960271171494254
+      },
+      "compressor_bpc": 1.548630321859974,
+      "compressor_gbps_at_2_5ghz": 3.871575804649935,
+      "decompressor_bpc": 7.2090702668991415,
+      "decompressor_gbps_at_2_5ghz": 18.022675667247853,
+      "decompressor_critical64_cycles": 44.94864541020377,
+      "decompressor_critical64_ns_at_2_5ghz": 17.979458164081507,
+      "decompressor_full_chunk_cycles": 55.69312181483532,
+      "decompressor_full_chunk_ns_at_2_5ghz": 22.27724872593413
+    },
+    "suite_geomeans": [
+      {
+        "suite": "DACAPO",
+        "inputs": 12,
+        "hardware_ratio_geomean": 4.4243559363944955,
+        "cpp_ratio_geomean": 4.43856280339445
+      },
+      {
+        "suite": "DATABASES",
+        "inputs": 5,
+        "hardware_ratio_geomean": 4.462030291094267,
+        "cpp_ratio_geomean": 4.490558166623009
+      },
+      {
+        "suite": "GRAPHBIG",
+        "inputs": 7,
+        "hardware_ratio_geomean": 4.797515501271829,
+        "cpp_ratio_geomean": 4.80765766382592
+      },
+      {
+        "suite": "PARSEC",
+        "inputs": 16,
+        "hardware_ratio_geomean": 2.263445560818304,
+        "cpp_ratio_geomean": 2.277649582303264
+      },
+      {
+        "suite": "RENAISSANCE",
+        "inputs": 25,
+        "hardware_ratio_geomean": 3.2468920174363984,
+        "cpp_ratio_geomean": 3.2604246026693544
+      },
+      {
+        "suite": "SPARKBENCH",
+        "inputs": 11,
+        "hardware_ratio_geomean": 2.9384907185480778,
+        "cpp_ratio_geomean": 2.949188837362323
+      },
+      {
+        "suite": "SPEC",
+        "inputs": 12,
+        "hardware_ratio_geomean": 2.625910762780007,
+        "cpp_ratio_geomean": 2.6300775639387775
+      }
+    ]
+  },
+  "note": "This distilled summary is derived from the merged full-suite cluster run and is bundled as reviewer-visible evidence because the packaged VM uses a reviewer-scaled 256-page broad sweep."
+}

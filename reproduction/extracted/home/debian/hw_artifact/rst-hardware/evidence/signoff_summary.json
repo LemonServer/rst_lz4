@@ -1,0 +1,960 @@
+{
+  "batch": {
+    "label": "reviewer_small_tops_split",
+    "root": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split",
+    "metadata": {
+      "batch_label": "reviewer_small_tops_split",
+      "launcher": "run_dc_smoke_batch.sh",
+      "tier": "small",
+      "internal_tier": "tiny",
+      "profile": "tops_only",
+      "start_epoch_s": "1775729020",
+      "clock_period_ns": "0.4",
+      "compile_mode": "ultra_retime",
+      "constraint_profile": "fast_poc"
+    },
+    "summary": {
+      "batch_label": "reviewer_small_tops_split",
+      "launcher": "run_dc_smoke_batch.sh",
+      "profile": "tops_only",
+      "tier": "small",
+      "job_total": "4",
+      "job_done": "4",
+      "job_running": "0",
+      "job_failed": "0",
+      "job_stopped": "0",
+      "job_missing": "0",
+      "compile_jobs_done": "4",
+      "compile_wall_s_sum": "20149.9",
+      "compile_wall_s_max": "8782.8",
+      "elab_wall_s_sum": "5.0",
+      "worst_slack_ps": "0.0",
+      "worst_slack_job": "00_compressortop_compile",
+      "worst_slack_top": "CompressorTop",
+      "batch_elapsed_wall_s": "13772.0"
+    },
+    "jobs": [
+      {
+        "job_id": "00_compressortop_compile",
+        "top": "CompressorTop",
+        "tier": "small",
+        "artifact_tier": "tiny",
+        "mode": "compile",
+        "status": "done",
+        "phase": "Parser smoke complete for CompressorTop on tier tiny",
+        "pid": "28943",
+        "elab_wall_s": null,
+        "elab_mem_mb": null,
+        "ports": 1524,
+        "regs": 2012,
+        "compile_wall_s": 8782.75,
+        "design_area": 638968.840435,
+        "comb_area": 351266.493535,
+        "noncomb_area": 287702.3469,
+        "leaf_cells": 351416,
+        "seq_cells": 55317,
+        "crit_path_len": 389.68,
+        "crit_slack": 0.0,
+        "tns": 0.0,
+        "violating_paths": 0,
+        "dw_blocks": "DW01_NAND2,DWBB_202409",
+        "log": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/launch/00_compressortop_compile/dc_shell.log",
+        "output_dir": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/compressortop_tiny/00_compressortop_compile"
+      },
+      {
+        "job_id": "02_pagecompressortop_compile",
+        "top": "PageCompressorTop",
+        "tier": "small",
+        "artifact_tier": "tiny",
+        "mode": "compile",
+        "status": "done",
+        "phase": "Parser smoke complete for PageCompressorTop on tier tiny",
+        "pid": "28984",
+        "elab_wall_s": 3.0,
+        "elab_mem_mb": 568.97,
+        "ports": 2132,
+        "regs": 2977,
+        "compile_wall_s": 7771.45,
+        "design_area": 613903.372177,
+        "comb_area": 357102.459303,
+        "noncomb_area": 256800.912874,
+        "leaf_cells": 352832,
+        "seq_cells": 50850,
+        "crit_path_len": 391.91,
+        "crit_slack": 0.0,
+        "tns": 0.0,
+        "violating_paths": 0,
+        "dw_blocks": "DW01_NAND2,DWBB_202409",
+        "log": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/launch/02_pagecompressortop_compile/dc_shell.log",
+        "output_dir": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagecompressortop_tiny/02_pagecompressortop_compile"
+      },
+      {
+        "job_id": "03_pagedecompressortop_compile",
+        "top": "PageDecompressorTop",
+        "tier": "small",
+        "artifact_tier": "tiny",
+        "mode": "compile",
+        "status": "done",
+        "phase": "Parser smoke complete for PageDecompressorTop on tier tiny",
+        "pid": "29018",
+        "elab_wall_s": null,
+        "elab_mem_mb": null,
+        "ports": 1732,
+        "regs": 900,
+        "compile_wall_s": 1813.62,
+        "design_area": 90773.912397,
+        "comb_area": 58061.992352,
+        "noncomb_area": 32711.920045,
+        "leaf_cells": 59064,
+        "seq_cells": 6191,
+        "crit_path_len": 395.01,
+        "crit_slack": 0.0,
+        "tns": 0.0,
+        "violating_paths": 0,
+        "dw_blocks": "DW01_NAND2,DWBB_202409",
+        "log": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/launch/03_pagedecompressortop_compile/dc_shell.log",
+        "output_dir": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagedecompressortop_tiny/03_pagedecompressortop_compile"
+      },
+      {
+        "job_id": "01_decompressortop_compile",
+        "top": "DecompressorTop",
+        "tier": "small",
+        "artifact_tier": "tiny",
+        "mode": "compile",
+        "status": "done",
+        "phase": "Parser smoke complete for DecompressorTop on tier tiny",
+        "pid": "28961",
+        "elab_wall_s": 2.0,
+        "elab_mem_mb": 537.2,
+        "ports": 1124,
+        "regs": 1375,
+        "compile_wall_s": 1782.05,
+        "design_area": 71174.660514,
+        "comb_area": 54828.964813,
+        "noncomb_area": 16345.695701,
+        "leaf_cells": 53775,
+        "seq_cells": 3303,
+        "crit_path_len": 394.81,
+        "crit_slack": 0.01,
+        "tns": 0.0,
+        "violating_paths": 0,
+        "dw_blocks": "DW01_NAND2,DWBB_202409",
+        "log": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/launch/01_decompressortop_compile/dc_shell.log",
+        "output_dir": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/decompressortop_tiny/01_decompressortop_compile"
+      }
+    ]
+  },
+  "tops": [
+    {
+      "top": "PageCompressorTop",
+      "status": "done",
+      "job_id": "02_pagecompressortop_compile",
+      "output_dir": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagecompressortop_tiny/02_pagecompressortop_compile",
+      "qor": {
+        "design_area": 613903.372177,
+        "comb_area": 357102.459303,
+        "noncomb_area": 256800.912874,
+        "leaf_cells": 352832,
+        "seq_cells": 50850,
+        "crit_slack": 0.0,
+        "tns": 0.0,
+        "violating_paths": 0,
+        "compile_wall_s": 7771.45
+      },
+      "timing": {
+        "available": true,
+        "startpoint": "pipe_seq4/sorted_stage_updates_reg[8][seq][3][5]",
+        "endpoint": "pipe_seq4/aggregated_stage_updates_reg[0][seq][3][8]",
+        "path_group": "clk",
+        "slack_ps": 0.0,
+        "ordered_hierarchy": [
+          "pipe_seq4",
+          "pipe_seq5",
+          "dict_serializer",
+          "<top>",
+          "<top_logic>"
+        ],
+        "hierarchy_delay_ps": [
+          {
+            "instance": "pipe_seq4",
+            "delay_ps": 1051.23
+          },
+          {
+            "instance": "dict_serializer",
+            "delay_ps": 296.1
+          },
+          {
+            "instance": "pipe_seq5",
+            "delay_ps": 260.28
+          },
+          {
+            "instance": "<top_logic>",
+            "delay_ps": 36.45
+          },
+          {
+            "instance": "<top>",
+            "delay_ps": 0.0
+          }
+        ]
+      },
+      "area_hierarchy": [
+        {
+          "instance": "Number of nets:",
+          "total_area": 381391.0
+        },
+        {
+          "instance": "Number of cells:",
+          "total_area": 352862.0
+        },
+        {
+          "instance": "Number of combinational cells:",
+          "total_area": 301982.0
+        },
+        {
+          "instance": "Number of sequential cells:",
+          "total_area": 50850.0
+        },
+        {
+          "instance": "Number of buf/inv:",
+          "total_area": 43898.0
+        },
+        {
+          "instance": "Buf/Inv area:",
+          "total_area": 33588.121274
+        },
+        {
+          "instance": "Number of ports:",
+          "total_area": 33274.0
+        },
+        {
+          "instance": "DW_cmp",
+          "total_area": 13228.3895
+        },
+        {
+          "instance": "DW_cmp",
+          "total_area": 9809.8207
+        },
+        {
+          "instance": "DP_OP Subtotal:",
+          "total_area": 9718.9943
+        },
+        {
+          "instance": "Subtotal of datapath(DP_OP) cell area:",
+          "total_area": 9718.9943
+        },
+        {
+          "instance": "DP_OP_5161J11_122_3557",
+          "total_area": 1760.0571
+        }
+      ],
+      "artifacts": {
+        "qor_rpt": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagecompressortop_tiny/02_pagecompressortop_compile/pagecompressortop_tiny_qor.rpt",
+        "timing_source": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagecompressortop_tiny/02_pagecompressortop_compile/pagecompressortop_tiny_timing.rpt",
+        "area_source": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagecompressortop_tiny/02_pagecompressortop_compile/pagecompressortop_tiny_area.rpt"
+      },
+      "missing_artifacts": [],
+      "power": {
+        "activity": {
+          "path": "build/reviewer_small/reviewer_small_tops_split_closeout/power/pagecompressortop/activity/pagecompressortop_tiny_activity_summary.rpt",
+          "mode": "activity",
+          "design": "PageCompressorTop",
+          "internal_mw": 114.6836,
+          "switching_mw": 3.1518,
+          "total_dynamic_mw": 117.8355,
+          "leakage_mw": 0.628852,
+          "clock_network_mw": 111.6274,
+          "register_mw": 3.2048,
+          "combinational_mw": 3.6383
+        },
+        "clock_only": {
+          "path": "build/reviewer_small/reviewer_small_tops_split_closeout/power/pagecompressortop/clock_only/pagecompressortop_tiny_clock_only_summary.rpt",
+          "mode": "clock_only",
+          "design": "PageCompressorTop",
+          "internal_mw": 114.6076,
+          "switching_mw": 0.0197671,
+          "total_dynamic_mw": 114.6274,
+          "leakage_mw": 0.6271177,
+          "clock_network_mw": 114.5733,
+          "register_mw": 0.5678,
+          "combinational_mw": 0.1266
+        },
+        "zero_toggle": {
+          "path": "build/reviewer_small/reviewer_small_tops_split_closeout/power/pagecompressortop/zero_toggle/pagecompressortop_tiny_zero_toggle_summary.rpt",
+          "mode": "zero_toggle",
+          "design": "PageCompressorTop",
+          "internal_mw": 0.0,
+          "switching_mw": 0.0,
+          "total_dynamic_mw": 0.0,
+          "leakage_mw": 0.6592128,
+          "clock_network_mw": 0.0,
+          "register_mw": 0.5515,
+          "combinational_mw": 0.1077
+        }
+      }
+    },
+    {
+      "top": "PageDecompressorTop",
+      "status": "done",
+      "job_id": "03_pagedecompressortop_compile",
+      "output_dir": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagedecompressortop_tiny/03_pagedecompressortop_compile",
+      "qor": {
+        "design_area": 90773.912397,
+        "comb_area": 58061.992352,
+        "noncomb_area": 32711.920045,
+        "leaf_cells": 59064,
+        "seq_cells": 6191,
+        "crit_slack": 0.0,
+        "tns": 0.0,
+        "violating_paths": 0,
+        "compile_wall_s": 1813.62
+      },
+      "timing": {
+        "available": true,
+        "startpoint": "chunk_decompressor/segmented_inputs_r_reg[0][0][valid]",
+        "endpoint": "chunk_decompressor/gen_lifos[0].lifo_expander/bank_mem_r_reg[8][0][2]",
+        "path_group": "clk",
+        "slack_ps": 0.0,
+        "ordered_hierarchy": [
+          "chunk_decompressor",
+          "<top_logic>",
+          "decompressed_out_r_reg[60][5]",
+          "<top>"
+        ],
+        "hierarchy_delay_ps": [
+          {
+            "instance": "<top_logic>",
+            "delay_ps": 740.07
+          },
+          {
+            "instance": "<top>",
+            "delay_ps": 0.0
+          },
+          {
+            "instance": "chunk_decompressor",
+            "delay_ps": 0.0
+          },
+          {
+            "instance": "decompressed_out_r_reg[60][5]",
+            "delay_ps": 0.0
+          }
+        ]
+      },
+      "area_hierarchy": [
+        {
+          "instance": "Number of nets:",
+          "total_area": 62839.0
+        },
+        {
+          "instance": "Number of cells:",
+          "total_area": 59067.0
+        },
+        {
+          "instance": "Number of combinational cells:",
+          "total_area": 52873.0
+        },
+        {
+          "instance": "Number of buf/inv:",
+          "total_area": 6746.0
+        },
+        {
+          "instance": "Number of sequential cells:",
+          "total_area": 6191.0
+        },
+        {
+          "instance": "Buf/Inv area:",
+          "total_area": 4987.759731
+        },
+        {
+          "instance": "Number of ports:",
+          "total_area": 4341.0
+        },
+        {
+          "instance": "DP_OP Subtotal:",
+          "total_area": 2228.3416
+        },
+        {
+          "instance": "Subtotal of datapath(DP_OP) cell area:",
+          "total_area": 2228.3416
+        },
+        {
+          "instance": "DP_OP_874J5_123_1510",
+          "total_area": 594.7397
+        },
+        {
+          "instance": "DP_OP_3326J2_122_8594",
+          "total_area": 410.8751
+        },
+        {
+          "instance": "DP_OP_3326J3_122_6619",
+          "total_area": 393.7116
+        }
+      ],
+      "artifacts": {
+        "qor_rpt": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagedecompressortop_tiny/03_pagedecompressortop_compile/pagedecompressortop_tiny_qor.rpt",
+        "timing_source": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagedecompressortop_tiny/03_pagedecompressortop_compile/pagedecompressortop_tiny_timing.rpt",
+        "area_source": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/pagedecompressortop_tiny/03_pagedecompressortop_compile/pagedecompressortop_tiny_area.rpt"
+      },
+      "missing_artifacts": [],
+      "power": {
+        "activity": {
+          "path": "build/reviewer_small/reviewer_small_tops_split_closeout/power/pagedecompressortop/activity/pagedecompressortop_tiny_activity_summary.rpt",
+          "mode": "activity",
+          "design": "PageDecompressorTop",
+          "internal_mw": 16.4091,
+          "switching_mw": 1.8239,
+          "total_dynamic_mw": 18.233,
+          "leakage_mw": 0.14890989999999998,
+          "clock_network_mw": 13.6155,
+          "register_mw": 2.4638,
+          "combinational_mw": 2.3025
+        },
+        "clock_only": {
+          "path": "build/reviewer_small/reviewer_small_tops_split_closeout/power/pagedecompressortop/clock_only/pagedecompressortop_tiny_clock_only_summary.rpt",
+          "mode": "clock_only",
+          "design": "PageDecompressorTop",
+          "internal_mw": 14.2207,
+          "switching_mw": 0.001129,
+          "total_dynamic_mw": 14.2218,
+          "leakage_mw": 0.14672300000000002,
+          "clock_network_mw": 14.2156,
+          "register_mw": 0.138,
+          "combinational_mw": 0.015018
+        },
+        "zero_toggle": {
+          "path": "build/reviewer_small/reviewer_small_tops_split_closeout/power/pagedecompressortop/zero_toggle/pagedecompressortop_tiny_zero_toggle_summary.rpt",
+          "mode": "zero_toggle",
+          "design": "PageDecompressorTop",
+          "internal_mw": 0.0,
+          "switching_mw": 0.0,
+          "total_dynamic_mw": 0.0,
+          "leakage_mw": 0.15419270000000002,
+          "clock_network_mw": 0.0,
+          "register_mw": 0.1402,
+          "combinational_mw": 0.014008
+        }
+      }
+    },
+    {
+      "top": "CompressorTop",
+      "status": "done",
+      "job_id": "00_compressortop_compile",
+      "output_dir": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/compressortop_tiny/00_compressortop_compile",
+      "qor": {
+        "design_area": 638968.840435,
+        "comb_area": 351266.493535,
+        "noncomb_area": 287702.3469,
+        "leaf_cells": 351416,
+        "seq_cells": 55317,
+        "crit_slack": 0.0,
+        "tns": 0.0,
+        "violating_paths": 0,
+        "compile_wall_s": 8782.75
+      },
+      "timing": {
+        "available": true,
+        "startpoint": "pipe_seq4/aggregator/R_68091",
+        "endpoint": "pipe_seq4/pending_updates_reg[0][6][count][3]",
+        "path_group": "clk",
+        "slack_ps": 0.0,
+        "ordered_hierarchy": [
+          "pipe_seq4",
+          "mfr",
+          "pipe_seq3",
+          "hash_table",
+          "pipe_seq2",
+          "pipe_seq5",
+          "dict_count_r_reg[5]",
+          "dict_serializer",
+          "<top>",
+          "<top_logic>",
+          "page_reg_reg[22][sym][5]",
+          "page_reg_reg[23][sym][5]"
+        ],
+        "hierarchy_delay_ps": [
+          {
+            "instance": "hash_table",
+            "delay_ps": 699.66
+          },
+          {
+            "instance": "mfr",
+            "delay_ps": 325.73
+          },
+          {
+            "instance": "dict_serializer",
+            "delay_ps": 317.77
+          },
+          {
+            "instance": "pipe_seq4",
+            "delay_ps": 311.02
+          },
+          {
+            "instance": "pipe_seq5",
+            "delay_ps": 291.53
+          },
+          {
+            "instance": "<top_logic>",
+            "delay_ps": 46.05
+          },
+          {
+            "instance": "dict_count_r_reg[5]",
+            "delay_ps": 33.65
+          },
+          {
+            "instance": "<top>",
+            "delay_ps": 0.0
+          }
+        ]
+      },
+      "area_hierarchy": [
+        {
+          "instance": "Number of nets:",
+          "total_area": 379841.0
+        },
+        {
+          "instance": "Number of cells:",
+          "total_area": 351446.0
+        },
+        {
+          "instance": "Number of combinational cells:",
+          "total_area": 296099.0
+        },
+        {
+          "instance": "Number of sequential cells:",
+          "total_area": 55317.0
+        },
+        {
+          "instance": "Number of buf/inv:",
+          "total_area": 43588.0
+        },
+        {
+          "instance": "Buf/Inv area:",
+          "total_area": 33053.210226
+        },
+        {
+          "instance": "Number of ports:",
+          "total_area": 32854.0
+        },
+        {
+          "instance": "DW_cmp",
+          "total_area": 14345.0126
+        },
+        {
+          "instance": "DP_OP Subtotal:",
+          "total_area": 9657.1939
+        },
+        {
+          "instance": "Subtotal of datapath(DP_OP) cell area:",
+          "total_area": 9657.1939
+        },
+        {
+          "instance": "DW_cmp",
+          "total_area": 9292.3195
+        },
+        {
+          "instance": "DP_OP_2272J16_124_4567",
+          "total_area": 1948.0664
+        }
+      ],
+      "artifacts": {
+        "qor_rpt": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/compressortop_tiny/00_compressortop_compile/compressortop_tiny_qor.rpt",
+        "timing_source": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/compressortop_tiny/00_compressortop_compile/compressortop_tiny_timing.rpt",
+        "area_source": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/compressortop_tiny/00_compressortop_compile/compressortop_tiny_area.rpt"
+      },
+      "missing_artifacts": [],
+      "power": {}
+    },
+    {
+      "top": "DecompressorTop",
+      "status": "done",
+      "job_id": "01_decompressortop_compile",
+      "output_dir": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/decompressortop_tiny/01_decompressortop_compile",
+      "qor": {
+        "design_area": 71174.660514,
+        "comb_area": 54828.964813,
+        "noncomb_area": 16345.695701,
+        "leaf_cells": 53775,
+        "seq_cells": 3303,
+        "crit_slack": 0.01,
+        "tns": 0.0,
+        "violating_paths": 0,
+        "compile_wall_s": 1782.05
+      },
+      "timing": {
+        "available": true,
+        "startpoint": "gen_lifos[0].lifo_expander/R_1501",
+        "endpoint": "gen_lifos[0].lifo_expander/bank_mem_r_reg[9][0][4]",
+        "path_group": "clk",
+        "slack_ps": 0.01,
+        "ordered_hierarchy": [
+          "gen_lifos[0].lifo_expander",
+          "R_1239",
+          "<top_logic>",
+          "gen_lifos[1].lifo_expander",
+          "<top>",
+          "dict_deserializer",
+          "dict_seqs_r_reg[7][0][3]",
+          "dict_seqs_r_reg[5][0][6]"
+        ],
+        "hierarchy_delay_ps": [
+          {
+            "instance": "dict_deserializer",
+            "delay_ps": 696.62
+          },
+          {
+            "instance": "<top_logic>",
+            "delay_ps": 79.88
+          },
+          {
+            "instance": "R_1239",
+            "delay_ps": 29.92
+          },
+          {
+            "instance": "<top>",
+            "delay_ps": 0.0
+          },
+          {
+            "instance": "dict_seqs_r_reg[5][0][6]",
+            "delay_ps": 0.0
+          },
+          {
+            "instance": "dict_seqs_r_reg[7][0][3]",
+            "delay_ps": 0.0
+          },
+          {
+            "instance": "gen_lifos[0].lifo_expander",
+            "delay_ps": 0.0
+          },
+          {
+            "instance": "gen_lifos[1].lifo_expander",
+            "delay_ps": 0.0
+          }
+        ]
+      },
+      "area_hierarchy": [
+        {
+          "instance": "Number of nets:",
+          "total_area": 57230.0
+        },
+        {
+          "instance": "Number of cells:",
+          "total_area": 53778.0
+        },
+        {
+          "instance": "Number of combinational cells:",
+          "total_area": 50472.0
+        },
+        {
+          "instance": "Number of buf/inv:",
+          "total_area": 6335.0
+        },
+        {
+          "instance": "Buf/Inv area:",
+          "total_area": 4706.424048
+        },
+        {
+          "instance": "Number of ports:",
+          "total_area": 3733.0
+        },
+        {
+          "instance": "Number of sequential cells:",
+          "total_area": 3303.0
+        },
+        {
+          "instance": "DP_OP Subtotal:",
+          "total_area": 2101.5244
+        },
+        {
+          "instance": "Subtotal of datapath(DP_OP) cell area:",
+          "total_area": 2101.5244
+        },
+        {
+          "instance": "DP_OP_874J4_123_1510",
+          "total_area": 596.4959
+        },
+        {
+          "instance": "DP_OP_3326J3_122_6619",
+          "total_area": 422.2827
+        },
+        {
+          "instance": "DP_OP_3326J2_122_8594",
+          "total_area": 396.687
+        }
+      ],
+      "artifacts": {
+        "qor_rpt": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/decompressortop_tiny/01_decompressortop_compile/decompressortop_tiny_qor.rpt",
+        "timing_source": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/decompressortop_tiny/01_decompressortop_compile/decompressortop_tiny_timing.rpt",
+        "area_source": "synthesis/results/parser_smoke_batches/reviewer_small_tops_split/results/decompressortop_tiny/01_decompressortop_compile/decompressortop_tiny_area.rpt"
+      },
+      "missing_artifacts": [],
+      "power": {}
+    }
+  ],
+  "perf": [
+    {
+      "tier": "small",
+      "experimental": false,
+      "input_file": "data/dacapo_avrora_rand1k",
+      "pages_requested": 16,
+      "pages_observed": 16,
+      "log_path": "build/reviewer_small/reviewer_small_tops_split_closeout/runtime/small_runtime_metrics_16pages.log",
+      "build_dir": "build/verilator/m4_runtime_small",
+      "summary": {
+        "input_bytes": 1024,
+        "padded_bytes": 1024,
+        "pages": 16,
+        "raw_bits": 8192,
+        "encoded_bits": 4499,
+        "ratio": 1.820849077572794,
+        "comp_cycles": 7237,
+        "decomp_cycles": 853,
+        "total_cycles": 8090,
+        "comp_bpc": 0.1414950946524803,
+        "decomp_bpc": 1.2004689331770222
+      },
+      "pages": [
+        {
+          "page_idx": 1,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 8,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 279,
+          "ratio": 1.8351,
+          "comp_cycles": 472,
+          "decomp_cycles": 53,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.2075
+        },
+        {
+          "page_idx": 2,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 7,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 270,
+          "ratio": 1.8963,
+          "comp_cycles": 472,
+          "decomp_cycles": 55,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.1636
+        },
+        {
+          "page_idx": 3,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 11,
+          "dict_count": 5,
+          "dict_bits": 196,
+          "raw_bits": 512,
+          "encoded_bits": 295,
+          "ratio": 1.7356,
+          "comp_cycles": 409,
+          "decomp_cycles": 52,
+          "comp_bpc": 0.1565,
+          "decomp_bpc": 1.2308
+        },
+        {
+          "page_idx": 4,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 8,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 279,
+          "ratio": 1.8351,
+          "comp_cycles": 472,
+          "decomp_cycles": 53,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.2075
+        },
+        {
+          "page_idx": 5,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 7,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 270,
+          "ratio": 1.8963,
+          "comp_cycles": 472,
+          "decomp_cycles": 55,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.1636
+        },
+        {
+          "page_idx": 6,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 11,
+          "dict_count": 5,
+          "dict_bits": 196,
+          "raw_bits": 512,
+          "encoded_bits": 295,
+          "ratio": 1.7356,
+          "comp_cycles": 409,
+          "decomp_cycles": 52,
+          "comp_bpc": 0.1565,
+          "decomp_bpc": 1.2308
+        },
+        {
+          "page_idx": 7,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 8,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 279,
+          "ratio": 1.8351,
+          "comp_cycles": 472,
+          "decomp_cycles": 53,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.2075
+        },
+        {
+          "page_idx": 8,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 7,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 270,
+          "ratio": 1.8963,
+          "comp_cycles": 472,
+          "decomp_cycles": 55,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.1636
+        },
+        {
+          "page_idx": 9,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 11,
+          "dict_count": 5,
+          "dict_bits": 196,
+          "raw_bits": 512,
+          "encoded_bits": 295,
+          "ratio": 1.7356,
+          "comp_cycles": 409,
+          "decomp_cycles": 52,
+          "comp_bpc": 0.1565,
+          "decomp_bpc": 1.2308
+        },
+        {
+          "page_idx": 10,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 8,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 279,
+          "ratio": 1.8351,
+          "comp_cycles": 472,
+          "decomp_cycles": 53,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.2075
+        },
+        {
+          "page_idx": 11,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 7,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 270,
+          "ratio": 1.8963,
+          "comp_cycles": 472,
+          "decomp_cycles": 55,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.1636
+        },
+        {
+          "page_idx": 12,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 11,
+          "dict_count": 5,
+          "dict_bits": 196,
+          "raw_bits": 512,
+          "encoded_bits": 295,
+          "ratio": 1.7356,
+          "comp_cycles": 409,
+          "decomp_cycles": 52,
+          "comp_bpc": 0.1565,
+          "decomp_bpc": 1.2308
+        },
+        {
+          "page_idx": 13,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 8,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 279,
+          "ratio": 1.8351,
+          "comp_cycles": 472,
+          "decomp_cycles": 53,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.2075
+        },
+        {
+          "page_idx": 14,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 7,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 270,
+          "ratio": 1.8963,
+          "comp_cycles": 472,
+          "decomp_cycles": 55,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.1636
+        },
+        {
+          "page_idx": 15,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 11,
+          "dict_count": 5,
+          "dict_bits": 196,
+          "raw_bits": 512,
+          "encoded_bits": 295,
+          "ratio": 1.7356,
+          "comp_cycles": 409,
+          "decomp_cycles": 52,
+          "comp_bpc": 0.1565,
+          "decomp_bpc": 1.2308
+        },
+        {
+          "page_idx": 16,
+          "page_total": 16,
+          "valid_bytes": 64,
+          "comp_syms": 8,
+          "dict_count": 6,
+          "dict_bits": 207,
+          "raw_bits": 512,
+          "encoded_bits": 279,
+          "ratio": 1.8351,
+          "comp_cycles": 472,
+          "decomp_cycles": 53,
+          "comp_bpc": 0.1356,
+          "decomp_bpc": 1.2075
+        }
+      ]
+    }
+  ],
+  "gaps": [],
+  "slack_tolerance_ps": 0.0
+}

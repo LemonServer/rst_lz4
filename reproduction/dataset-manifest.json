@@ -1,0 +1,530 @@
+[
+  {
+    "name": "DACAPO_avrora.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "8f51371d52c667f59d737dfb0bf771b3af7631aeb8b3cba80a282e1662a0b044"
+  },
+  {
+    "name": "DACAPO_batik.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "e330cdc29ee4121c643ad8aa7d5cc5a98ee3f35c08c6dd6361e2cd839b0973c2"
+  },
+  {
+    "name": "DACAPO_eclipse.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "f8527ae27e813e2e4bb6d0911b56f6e3355982197b01342395e2b49a963b0839"
+  },
+  {
+    "name": "DACAPO_fop.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "8e72721a504736815586d613f937d70a7d942b069d17e490ea5509a39e9616c8"
+  },
+  {
+    "name": "DACAPO_h2.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "b2e4e051d2302cf2171918ac90e1af7b445cef9b9fe1f242cb202f49bb2120c9"
+  },
+  {
+    "name": "DACAPO_jython.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "f2e5b25e73534e26a9db6ba511945b1ae95f270d31adde55a0055188bd570dad"
+  },
+  {
+    "name": "DACAPO_lusearch-fix.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "7bca9b0f072196753463abfb7e1c414e3ebc8dc8ef544e4e42e1088aa419ad7b"
+  },
+  {
+    "name": "DACAPO_pmd.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "0055b385138a76ef1acbca55479777f51530225b7491a0661a67cdd062b4e482"
+  },
+  {
+    "name": "DACAPO_sunflow.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "b6e63138835cf2ae7c9f3bc5d55b7d0e4cde9379f57105ffce1070d38a07343c"
+  },
+  {
+    "name": "DACAPO_tradebeans.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "eb75e96cbfff65af6645701ada6b4026b9d6dba0500ddf422a0ac2cc632638bf"
+  },
+  {
+    "name": "DACAPO_tradesoap.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "8bd1a0c00f6ce1578f26473debd5ef711170b60a206f5a1230582628045050cf"
+  },
+  {
+    "name": "DACAPO_xalan.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "d51a691abe44b32cdd79b62cefb0db18a78601b5250470006017dcfa020618a2"
+  },
+  {
+    "name": "DATABASES_Spec_JBB.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "68c197b3ce509a308e9a503f223bf529a848012ca9cac64cc71b10936659aec5"
+  },
+  {
+    "name": "DATABASES_redis.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "e47d606d88029811325a82c004bf931cdd7c00395c4818ba6656381871f6e8b2"
+  },
+  {
+    "name": "DATABASES_tpc-c.dump",
+    "bytes": 1888256,
+    "pages": 461,
+    "sha256": "e25b2f33b606da91447a554693bf3212fd650508d3563cc0c6984169924b4cf4"
+  },
+  {
+    "name": "DATABASES_tpc-e.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "80898f6b467fb9559391843b74c53a770231d3d4160faab0ef13a6947735512f"
+  },
+  {
+    "name": "DATABASES_tpc-h.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "7be343ad369ce52374e4d45139e873b86a4d429b2900ec689f592c5914fd40cb"
+  },
+  {
+    "name": "GRAPHBIG_bfs.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "7ea15df4400ec9ce3d1ac4cff4d727620f46b80ddbca8828e8b970173c18c255"
+  },
+  {
+    "name": "GRAPHBIG_connectedcomponent.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "b5b2138306b4ae06606a94b876df4d1ebdb5943f0a8e881f4be0ee232c248621"
+  },
+  {
+    "name": "GRAPHBIG_dc.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "50413b244cb5434768a91dcf2b6c27bb05cffd12a86c8c2bbbdd84b5f87f99d4"
+  },
+  {
+    "name": "GRAPHBIG_dfs.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "aee5426e77c47fb4eb0fb61cdf48c91a3ccf0b42c89965b24a65c54a058cedec"
+  },
+  {
+    "name": "GRAPHBIG_graphcoloring.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "3f3722cf052c62bfc81a4445d0d2d094ef17d0b7681797d46df204ce5a0b713b"
+  },
+  {
+    "name": "GRAPHBIG_kcore.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "9f2d2b4365599d0ead3f885b81247fcb9490c2b517266d1249c30c0d1c768cbe"
+  },
+  {
+    "name": "GRAPHBIG_pagerank.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "e86b6491371199c225d953facdab05a8cf5c4ed4df4623d5a05cea1e2efb53fa"
+  },
+  {
+    "name": "PARSEC_barnes.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "484c58fb5093e96557d69ff469e166ea1fcc48558894722bcdbedf321e61b4d4"
+  },
+  {
+    "name": "PARSEC_blackscholes.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "600da6a37632ab95b8daea6e7810d8df1cc258ef4d0b8989afefa20e8177568b"
+  },
+  {
+    "name": "PARSEC_canneal.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "7cc52b9f3fedc1c418e310ac06979af2e9d2459eaa867c5112fd85514c15c2fb"
+  },
+  {
+    "name": "PARSEC_facesim.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "b0ee9d77972fa36b7309f13ffe39bfa1ae916707186b127d41e523701ac309d6"
+  },
+  {
+    "name": "PARSEC_ferret.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "28d49647c49727d6a6190433c57d36031557946f3755732377908e6e39dff5fb"
+  },
+  {
+    "name": "PARSEC_fft.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "4d1d8522fcc1dd1fddf974fe0577689f6d2b0afe1fb9af1b30b2d9caa3fc1edd"
+  },
+  {
+    "name": "PARSEC_fluidanimate.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "8ab3b3c86245f1622d0b23d9ac7b200d441308b69db653aec760a5c2ade30f89"
+  },
+  {
+    "name": "PARSEC_fmm3.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "4ed21ff6197b3a36349163f5a33df1ebe47efcd597940fccf489190c40bf93d1"
+  },
+  {
+    "name": "PARSEC_freqmine.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "ccaf171cb26224e5c6c5e4bc13f68abfa58a205f64eb4bba2cfd39c449709cb7"
+  },
+  {
+    "name": "PARSEC_lu_cb.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "622a2c0884865014980b4e6b09530b5d87ddb986ae66548e4c3048954b827c83"
+  },
+  {
+    "name": "PARSEC_lu_ncb.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "621f9410644c1004d85cff99e7b9a7f0cedd8899ffbbad572789f94fa2d62739"
+  },
+  {
+    "name": "PARSEC_ocean_cp.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "3ae7c52cbb1286c39789cd11ec99cada050052c84b780294e222964a97463da7"
+  },
+  {
+    "name": "PARSEC_radiosity.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "f8a6e22ac33834b171f46b80cd5c13857016d959a93a6167a12fb55df0f5278f"
+  },
+  {
+    "name": "PARSEC_radix.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "dc569cc66102704d9feb47734a649e117b47f9416dacc57bc97ce3586186517f"
+  },
+  {
+    "name": "PARSEC_streamcluster.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "db2af69ac7eb43ec8194ca2c4fe7005d63171d4006c86f5b008c09c32ef5f0a5"
+  },
+  {
+    "name": "PARSEC_water_spatial.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "3b372a737531d5d73e37ff6539b0d1c75911c31d607ff7096dc63b7f797fb7ec"
+  },
+  {
+    "name": "RENAISSANCE_akka-uct.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "42cd0093fc11ecfa6a4d7d21a1106805f66152137a71351c57dba40451de38fa"
+  },
+  {
+    "name": "RENAISSANCE_als.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "fa8a83a3218809e3b338d6016c8af2578428a23b8fd21ff77c91792094df6cf4"
+  },
+  {
+    "name": "RENAISSANCE_chi-square.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "56dff11041d2738a0e91b131d84baab4304fa23b0e58c7674b35d800b7dd97ee"
+  },
+  {
+    "name": "RENAISSANCE_db-shootout.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "c42f8473eb6ddce61f281343a7b08e03a481cfed0c7a7f7ef3ae4d334887ecc1"
+  },
+  {
+    "name": "RENAISSANCE_dec-tree.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "4f362668099d7375ae943e485320120bff528e8d45bf8d5f05b0446eb1906462"
+  },
+  {
+    "name": "RENAISSANCE_dotty.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "df75d8211d5df2da615cf4f3c01c8ca5a404b3c8fe1a82fed1f67835ba7f82e7"
+  },
+  {
+    "name": "RENAISSANCE_finagle-chirper.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "2b0929d840e3e2000c1af8489b3af19d4dd1c60fea89fe33abfce714e2be4e9e"
+  },
+  {
+    "name": "RENAISSANCE_finagle-http.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "546104a310c3b6d427384867a0118b586c7c07b224814b8b07f30d53dec98783"
+  },
+  {
+    "name": "RENAISSANCE_fj-kmeans.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "7b339b71a54f3cd6c4fb3dd0148065d96149bc5c1a808c22eb8757eb1b45b082"
+  },
+  {
+    "name": "RENAISSANCE_future-genetic.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "80ba93c7305ea244d5f76025efb3e6787276e535ef87901084abb75c61bb2918"
+  },
+  {
+    "name": "RENAISSANCE_gauss-mix.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "873fcba3fe0ced5c5dec2f7d9383226a1b042a2c5ca350d3e3d9a32e3c65061c"
+  },
+  {
+    "name": "RENAISSANCE_log-regression.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "ea4f87395ecef577cb2a8b9729e9e84f017f70b67278e291cb0d32d1fa0ec23f"
+  },
+  {
+    "name": "RENAISSANCE_mnemonics.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "a5586b4c56a716258449d1ac6887391ec56bf2677d7872f9bf478df5a90327fd"
+  },
+  {
+    "name": "RENAISSANCE_movie-lens.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "431ce32a892f7c3daf6785574e9f6dc8f79383a9b837f5f089bd8fd6f0dc1d12"
+  },
+  {
+    "name": "RENAISSANCE_naive-bayes.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "5a6adc27f10dae5b254f2bd790c32eb44203c0c4fd98a2564de39e84af306b67"
+  },
+  {
+    "name": "RENAISSANCE_neo4j-analytics.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "e6c11a64634aea9f3d19e0880a38bc7f26da98feed9e9268c3abdaab5ce221c8"
+  },
+  {
+    "name": "RENAISSANCE_page-rank.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "ab88d47176c9bb6825ef25341656a8c3809f89fa88965f3d4409048181354735"
+  },
+  {
+    "name": "RENAISSANCE_par-mnemonics.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "3415ca7dd987a691395baeac1d3766651ff05aa543c2a422b066534be14fcf62"
+  },
+  {
+    "name": "RENAISSANCE_philosophers.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "837897396cb3d841bcf841bc10fe8ee224bcb193392807c35ac925534077a27f"
+  },
+  {
+    "name": "RENAISSANCE_reactors.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "29ead2969f4b8ec5c7b99f8f9b661e255a9dd35e12e31240baf09268ad8770ef"
+  },
+  {
+    "name": "RENAISSANCE_rx-scrabble.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "0be571a9b5471ff488984c594c91463ce8a863a380e42e667c936b4a5005808e"
+  },
+  {
+    "name": "RENAISSANCE_scala-doku.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "0e7420ffd036e0366f52eca139159d421544b61f7eb32ac55e606c78e1ffd349"
+  },
+  {
+    "name": "RENAISSANCE_scala-kmeans.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "0993c0e3a88fd6b124f15118e741baef883ff2d2b3b161c1ffb5c7078949113e"
+  },
+  {
+    "name": "RENAISSANCE_scala-stm-bench.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "122437028d9ab8f66e1848ed8c12a9bfdab36f839db69e21c6c16acb228cb735"
+  },
+  {
+    "name": "RENAISSANCE_scrabble.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "eb001567ac6fc189d7a132a83d5279ffb15e61ee99b0f35fe14f7095c3eea280"
+  },
+  {
+    "name": "SPARKBENCH_ConnectedComponent.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "04a030c81f2bf86509e6d7b9b0a879634c6dd581d2a61b3692ea7a7e1324d515"
+  },
+  {
+    "name": "SPARKBENCH_DecisionTree.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "eb5d8d9011bfee08cbd47476c66aa3667cc05990b113f720d383b09a90921da2"
+  },
+  {
+    "name": "SPARKBENCH_KMeans.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "2f73209ba5ba8defe6fd611fade0d6b70d3762d58ba1e6baa33650c77aae2d28"
+  },
+  {
+    "name": "SPARKBENCH_LinearRegression.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "0e369e6cf32a0ce98a3e4df35d5b316baeba4bb3276175765ce8a9924e1a94cc"
+  },
+  {
+    "name": "SPARKBENCH_LogisticRegression.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "631982bb8ba0e3b79e14bb3a18b7008e0b52ff10ab4f77b36fde7bba6d5bef6f"
+  },
+  {
+    "name": "SPARKBENCH_MatrixFactorization.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "1ae925faad40b236579e54bea4347cbbdc702d4e7a8aaae31677c62f7d3b54e8"
+  },
+  {
+    "name": "SPARKBENCH_PregelOperation.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "a48a01ea01f85f3fc83a3697269dfe0bd8ae66ee19fcfc1968a2a57702c855b8"
+  },
+  {
+    "name": "SPARKBENCH_SVM.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "0a692f4cb2f839a69011aa18bbcd62bbd8a8f5b695fec7b230fe26d236dddf33"
+  },
+  {
+    "name": "SPARKBENCH_ShortestPaths.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "f1f1ee44b65a808dd0ea66200ba98aa42d6d6e1cc27e62003ab81cf569d4d361"
+  },
+  {
+    "name": "SPARKBENCH_Streaming.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "90664a64b769e4a5b4bfd047ebb9e36fc85904bccdba99a7a1717088b1675fb9"
+  },
+  {
+    "name": "SPARKBENCH_TriangleCount.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "52257b1c0515d46b231e2dc2bff7f81dbe3c1a20016eb444550be6655587ab41"
+  },
+  {
+    "name": "SPEC_bwaves.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "cbdf62b4231a7cff05f9d7c35f97c8963c74d693164393197ff64baf213ed3b2"
+  },
+  {
+    "name": "SPEC_cactuBSSN.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "41a3aba7a6d1d0b8d07ef03c325bf2c2f84ae3ddad80da83e8ff1f125a3169d8"
+  },
+  {
+    "name": "SPEC_deepsjeng.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "a9123db9d89fc6bbbb25ded3eea735b4074189db705230eb51fc9e417b980bb7"
+  },
+  {
+    "name": "SPEC_fotonik3d.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "7c11ff68d16957f8776c2965e6ad4313a668130eabc5068007e39dbed3fd42e3"
+  },
+  {
+    "name": "SPEC_imagick.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "8283aa35e40ffada9b2a1031ba1654f57589be598e2fe006193eedd3c8775618"
+  },
+  {
+    "name": "SPEC_lbm.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "67fb36cbe3cbfb3480b672d274f4b3a8ddd67acfccb84e8f6b0e8edc5a250f55"
+  },
+  {
+    "name": "SPEC_mcf.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "cd826ce4a777489fdde67c61400d1ffc2d2a33a77bbce2f4a342d3784126df7f"
+  },
+  {
+    "name": "SPEC_nab.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "29bde0face2c9f09ec751626ae41141146544c7cc7ec22030d39f4de9e41e1b6"
+  },
+  {
+    "name": "SPEC_omnetpp.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "2d90f09d8c0a5cd484794e649a842f82b83608778b6a0f5acfba08919fde6f8d"
+  },
+  {
+    "name": "SPEC_wrf.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "96af958308d1e9d48520a56ba62b0feebc6fbd48e48763d5db16844fc0a8843a"
+  },
+  {
+    "name": "SPEC_xalancbmk.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "8fb75ce4c825ae060d82c6447ba780e07648859f12240e4178aead35099d52e1"
+  },
+  {
+    "name": "SPEC_xz.dump",
+    "bytes": 20480000,
+    "pages": 5000,
+    "sha256": "3e6ac460a6e736011166c9c6567351d68fac6f1872d5e6de145c60bcf7523b65"
+  }
+]

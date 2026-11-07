@@ -1,0 +1,8 @@
+experimental/frozen_large/rst_pkg.sv
+experimental/frozen_large/dict_packed_codec.sv
+experimental/frozen_large/experimental/experimental_huffman_pkg.sv
+experimental/frozen_large/decompressor/experimental_dict_decoder.sv
+experimental/frozen_large/decompressor/experimental_chunk_decoder.sv
+experimental/frozen_large/decompressor/lifo_expander.sv
+experimental/frozen_large/decompressor/experimental_decompressor_top.sv
+experimental/frozen_large/decompressor/experimental_page_decompressor_top.sv
