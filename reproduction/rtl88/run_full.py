@@ -1,9 +1,22 @@
-import sys,os,json,time,traceback,argparse
+import sys,os,json,time,traceback,argparse,pickle
 from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor,wait,FIRST_COMPLETED
 root=Path(os.environ['RST_HW_ROOT']);sys.path.insert(0,str(root/'tools'))
 import run_rst_verify as v
 sys.argv=['run_rst_verify.py','--pages','5000','--jobs','1','--build-jobs','2','--verilator-bin',os.environ['RST_VERILATOR_BIN'],'--roundtrip-build-dir','build/native/roundtrip','--decompressor-build-dir','build/native/decompressor','--latency-build-dir','build/native/latency','--cpp-build-dir','build/native/cpp','--log-dir','build/full88/logs']
+import run_m4_experimental_regression as runtime
+runtime_original = runtime.run_runtime_harness
+def reuse_verified_runtime_log(*a, **kw):
+ log=kw['log_path']
+ if log.exists():
+  text=log.read_text()
+  if 'tb_M4ExperimentalRuntimeFileCompressorTop passed' in text:
+   pages, summary=runtime.parse_hardware_log(text)
+   if summary['pages']==kw['pages']:
+    print('REUSE_VERIFIED_RTL_LOG',kw['input_file'].name,flush=True)
+    return text
+ return runtime_original(*a,**kw)
+runtime.run_runtime_harness=reuse_verified_runtime_log
 args=v.parse_args(); artifacts=None
 originals={n:getattr(v,n) for n in ['run_hardware_roundtrip','run_sv_decompressor_check','_run_direct_latency_measurement']}
 out=root/'build/full88';(out/'results').mkdir(parents=True,exist_ok=True)
@@ -18,10 +31,10 @@ def work(name):
    original=originals[fn]
    checkpoint=out/'results'/(p.stem+'.'+fn+'.checkpoint')
    def cached(*a,_fn=original,_cp=checkpoint,**kw):
-    if _cp.exists(): return json.loads(_cp.read_text())
+    if _cp.exists(): return pickle.loads(_cp.read_bytes())
     print('STAGE_START',p.name,_fn.__name__,flush=True)
     value=_fn(*a,**kw)
-    _cp.write_text(json.dumps(value))
+    _cp.write_bytes(pickle.dumps(value))
     print('STAGE_DONE',p.name,_fn.__name__,flush=True)
     return value
    setattr(v,fn,cached)
