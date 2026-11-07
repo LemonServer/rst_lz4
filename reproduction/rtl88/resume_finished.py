@@ -10,8 +10,16 @@ if __name__=='__main__':
   while True:
    if time.time()>=next_scan:
     for p in inputs:
-     err=job.out/'results'/(p.stem+'.error.txt')
-     if p.name not in scheduled and err.exists() and 'Object of type bytes is not JSON serializable' in err.read_text():
+     if p.name in scheduled:continue
+     expected=min(5000,p.stat().st_size//4096)
+     log=job.runtime.runtime_log_path(job.artifacts['log_dir'],p,'large_verify',expected,job.root)
+     valid=False
+     if log.exists():
+      text=log.read_text()
+      if 'tb_M4ExperimentalRuntimeFileCompressorTop passed' in text:
+       _pages,summary=job.runtime.parse_hardware_log(text)
+       valid=summary['pages']==expected
+     if valid:
       scheduled.add(p.name);pending[pool.submit(job.work,str(p))]=p.name
       print('RESUME_SCHEDULED',p.name,flush=True)
     next_scan=time.time()+600

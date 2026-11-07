@@ -24,12 +24,12 @@ def _work_unlocked(name):
  p=Path(name);dest=out/'results'/(p.stem+'.json')
  if dest.exists():
   r=json.loads(dest.read_text())
-  if r.get('status')=='PASS':return {'name':p.name,'status':'PASS','cached':True}
+  if r.get('status')=='PASS' and r.get('artifact_isolation')=='decode_dataset-v1':return {'name':p.name,'status':'PASS','cached':True}
  start=time.time()
  try:
   for fn in ['run_hardware_roundtrip','run_sv_decompressor_check','_run_direct_latency_measurement']:
    original=originals[fn]
-   checkpoint=out/'results'/(p.stem+'.'+fn+'.checkpoint')
+   checkpoint=out/'results'/(p.stem+'.'+fn+('.isolated_v1' if fn=='run_sv_decompressor_check' else '')+'.checkpoint')
    def cached(*a,_fn=original,_cp=checkpoint,**kw):
     if _cp.exists(): return pickle.loads(_cp.read_bytes())
     print('STAGE_START',p.name,_fn.__name__,flush=True)
@@ -39,8 +39,10 @@ def _work_unlocked(name):
     return value
    setattr(v,fn,cached)
   loaded=v.load_paged_input(root,p,5000)
-  r=v._verify_input(args=args,root=root,loaded_input=loaded,pages_requested=5000,artifacts=artifacts)
-  r['elapsed_seconds']=time.time()-start
+  local_artifacts=dict(artifacts)
+  local_artifacts['decompressor_build_dir']=out/'decode_cases'/p.stem
+  r=v._verify_input(args=args,root=root,loaded_input=loaded,pages_requested=5000,artifacts=local_artifacts)
+  r['artifact_isolation']='decode_dataset-v1';r['elapsed_seconds']=time.time()-start
   tmp=dest.with_suffix('.json.tmp'); tmp.write_text(json.dumps(r)); tmp.replace(dest)
   return {'name':p.name,'status':r['status'],'seconds':round(time.time()-start)}
  except Exception:

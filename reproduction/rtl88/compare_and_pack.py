@@ -4,7 +4,9 @@ root=Path(os.environ['RST_HW_ROOT']);base=Path('reproduction/rtl88');out=root/'b
 d=json.loads((out/'full-summary.json').read_text());r=d['results'];meta=json.loads((base/'run-metadata.json').read_text());d['end_to_end_elapsed_seconds']=time.time()-meta['started_at_epoch'];d['started_at_shanghai']=meta['started_at_shanghai'];assert len(r)==88 and all(x['status']=='PASS' for x in r)
 assert sum(x['input_accounting']['selected_pages'] for x in r)==435461
 for x in r:
+ assert x.get('artifact_isolation')=='decode_dataset-v1'
  n=x['input_accounting']['selected_pages'];assert x['decompressor_latency']['page_count']==n and x['decompressor_decode']['page_count']==n
+assert len({x['decompressor_decode']['build_dir'] for x in r})==88
 s=d['paper_metric_summary']['suite_geomean_of_geomeans'];a=json.loads((root/'evidence/full_suite_88x5000_summary.json').read_text())['paper_metric_summary']['suite_geomean_of_geomeans']
 rows=[]
 for k,p in [('compressor_gbps_at_2_5ghz',4.13),('decompressor_gbps_at_2_5ghz',13.3),('decompressor_critical64_ns_at_2_5ghz',18.0)]:

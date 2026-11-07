@@ -13,3 +13,10 @@ locks prevent two corrected workers from processing the same dataset concurrentl
 checkpoints and final JSON are replaced atomically. All requested pages and all
 three verification stages remain required. Eligible completed logs are discovered
 every ten minutes. The final main driver uses the same locks and cached results.
+
+Standalone decode stimuli/expected files in the original helper are named only by
+page number. Corrected concurrent runs therefore use a separate decode directory
+for every dataset. Earlier standalone checkpoints are not accepted; the new
+checkpoint suffix is .isolated_v1 and final results require decode_dataset-v1.
+The direct-latency helper already includes the unique input path in artifact names.
+The final comparison asserts 88 distinct standalone decode directories.
