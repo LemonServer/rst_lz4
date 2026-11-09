@@ -1,6 +1,5 @@
 .venv
 .venv/
-generated/
 __pycache__/
 *.pyc
 *.pyo
@@ -17,10 +16,6 @@ MemComp/test.csv
 /generated/
 /reproduction/generated-before-*/
 /reproduction/image-readonly/
-/reproduction/extracted/home/debian/verilator-5.046/
-/reproduction/extracted/home/debian/hw_artifact/rst-hardware/data/
-/reproduction/extracted/home/debian/hw_artifact/rst-hardware/synthesis/results/
-/reproduction/extracted/home/debian/hw_artifact/rst-hardware/synthesis/libs/
 
 # VM disks and archive bundles
 *.img
@@ -62,7 +57,6 @@ obj_dir/
 *.log
 *.checkpoint
 *.csv
-/reproduction/extracted/home/debian/hw_artifact/rst-hardware/evidence/*.stdout
 
 # Extraction inventory and live-session state
 /reproduction/image-files.txt
@@ -72,3 +66,17 @@ obj_dir/
 
 /reproduction/rtl88/job-status.json
 /reproduction/rtl88/*.pid
+
+# External dependencies and legacy live-run workspace (not source).
+/reproduction/extracted/
+/hardware/data/
+/hardware/synthesis/results/
+/hardware/synthesis/libs/
+/hardware/evidence/*.stdout
+/archive/
+*.qcow
+*.qcow2.*
+*.vvp
+*.vpi
+*.wlf
+*.bundle
