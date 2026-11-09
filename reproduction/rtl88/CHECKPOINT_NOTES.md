@@ -20,3 +20,11 @@ for every dataset. Earlier standalone checkpoints are not accepted; the new
 checkpoint suffix is .isolated_v1 and final results require decode_dataset-v1.
 The direct-latency helper already includes the unique input path in artifact names.
 The final comparison asserts 88 distinct standalone decode directories.
+
+Full-page contract v2 explicitly passes --latency-pages 0. Final cached results
+must cover all selected pages in roundtrip, standalone decode and direct latency,
+and all 16 chunks per page. Old 8-page latency caches use a different namespace
+and are not accepted. Hardware and valid isolated-decode checkpoints are retained.
+run_durable.py ignores SIGHUP, runs without terminal input, writes a status file,
+and packs results only after the full 88-dataset comparison passes. This is an
+ordinary background process; it creates no virtual terminal or extra login.

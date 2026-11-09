@@ -69,3 +69,6 @@ obj_dir/
 /reproduction/rtl88/current-session.json
 
 /reproduction/rtl88/run-metadata.json
+
+/reproduction/rtl88/job-status.json
+/reproduction/rtl88/*.pid
