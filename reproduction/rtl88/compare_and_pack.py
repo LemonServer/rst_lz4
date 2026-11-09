@@ -29,6 +29,6 @@ for x in r:
 archive=base/'rtl88-results.tar.gz'
 with tarfile.open(archive,'w:gz') as tf:
  for p in base.iterdir():
-  if p.is_file() and p.suffix in {'.py','.txt','.csv','.json','.log','.md'}:tf.add(p,arcname='rtl88/'+p.name)
+  if p.name not in {'job-status.json','current-session.json'} and p.is_file() and p.suffix in {'.py','.txt','.csv','.json','.log','.md'}:tf.add(p,arcname='rtl88/'+p.name)
 print('RESULT_ARCHIVE',archive.stat().st_size,hashlib.sha256(archive.read_bytes()).hexdigest(),flush=True)
 print(json.dumps(rows,indent=2),flush=True)
