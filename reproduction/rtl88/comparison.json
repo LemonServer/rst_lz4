@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "datasets": 88,
+  "pages": 435461,
+  "all_page_latency": true,
+  "metrics": [
+    {
+      "metric": "compressor_gbps_at_2_5ghz",
+      "measured": 3.871948286315041,
+      "paper": 4.13,
+      "delta_vs_paper_pct": -6.248225512952999,
+      "bundled_full_run": 3.871575804649935,
+      "delta_vs_bundle_pct": 0.009620931731690874
+    },
+    {
+      "metric": "decompressor_gbps_at_2_5ghz",
+      "measured": 18.022980761267682,
+      "paper": 13.3,
+      "delta_vs_paper_pct": 35.511133543366014,
+      "bundled_full_run": 18.022675667247853,
+      "delta_vs_bundle_pct": 0.001692834213207206
+    },
+    {
+      "metric": "decompressor_critical64_ns_at_2_5ghz",
+      "measured": 18.171640462580747,
+      "paper": 18.0,
+      "delta_vs_paper_pct": 0.9535581254485948,
+      "bundled_full_run": 17.979458164081507,
+      "delta_vs_bundle_pct": 1.0688992779725348
+    }
+  ],
+  "paper_metric_summary": {
+    "benchmark_geomeans": {
+      "ratio": {
+        "hardware": 3.1950117739245694,
+        "cpp": 3.2076625021445575
+      },
+      "compressor_bpc": 1.5433445090010454,
+      "decompressor_bpc": 7.425038433521412,
+      "decompressor_critical64_cycles": 43.71853497233886,
+      "decompressor_full_chunk_cycles": 54.933788691319215
+    },
+    "suite_geomeans": [
+      {
+        "suite": "DACAPO",
+        "hardware_ratio_geomean": 4.4243559363944955,
+        "cpp_ratio_geomean": 4.43856280339445,
+        "compressor_bpc_geomean": 1.4680936575108416,
+        "decompressor_bpc_geomean": 5.453619927910954,
+        "decompressor_critical64_cycles_geomean": 56.73933257456188,
+        "decompressor_full_chunk_cycles_geomean": 74.07724708758715,
+        "inputs": 12
+      },
+      {
+        "suite": "DATABASES",
+        "hardware_ratio_geomean": 4.431017285929176,
+        "cpp_ratio_geomean": 4.458951796176859,
+        "compressor_bpc_geomean": 1.6052850686855187,
+        "decompressor_bpc_geomean": 5.456178363048562,
+        "decompressor_critical64_cycles_geomean": 51.274772505435095,
+        "decompressor_full_chunk_cycles_geomean": 65.38527045519682,
+        "inputs": 5
+      },
+      {
+        "suite": "GRAPHBIG",
+        "hardware_ratio_geomean": 4.797515501271829,
+        "cpp_ratio_geomean": 4.80765766382592,
+        "compressor_bpc_geomean": 1.3410326937071,
+        "decompressor_bpc_geomean": 10.015560972317285,
+        "decompressor_critical64_cycles_geomean": 49.89262453501508,
+        "decompressor_full_chunk_cycles_geomean": 63.83413287387519,
+        "inputs": 7
+      },
+      {
+        "suite": "PARSEC",
+        "hardware_ratio_geomean": 2.263445560818304,
+        "cpp_ratio_geomean": 2.277649582303264,
+        "compressor_bpc_geomean": 1.893055606688838,
+        "decompressor_bpc_geomean": 8.94886846689533,
+        "decompressor_critical64_cycles_geomean": 33.53617743524933,
+        "decompressor_full_chunk_cycles_geomean": 40.311863653051965,
+        "inputs": 16
+      },
+      {
+        "suite": "RENAISSANCE",
+        "hardware_ratio_geomean": 3.2468920174363984,
+        "cpp_ratio_geomean": 3.2604246026693544,
+        "compressor_bpc_geomean": 1.3700523942362932,
+        "decompressor_bpc_geomean": 7.898336323449401,
+        "decompressor_critical64_cycles_geomean": 42.95949977670017,
+        "decompressor_full_chunk_cycles_geomean": 53.08281216420442,
+        "inputs": 25
+      },
+      {
+        "suite": "SPARKBENCH",
+        "hardware_ratio_geomean": 2.9384907185480778,
+        "cpp_ratio_geomean": 2.949188837362323,
+        "compressor_bpc_geomean": 1.5295460785007067,
+        "decompressor_bpc_geomean": 5.681047692563398,
+        "decompressor_critical64_cycles_geomean": 51.26387006207421,
+        "decompressor_full_chunk_cycles_geomean": 67.52634580211905,
+        "inputs": 11
+      },
+      {
+        "suite": "SPEC",
+        "hardware_ratio_geomean": 2.625910762780007,
+        "cpp_ratio_geomean": 2.6300775639387775,
+        "compressor_bpc_geomean": 1.7049763944090213,
+        "decompressor_bpc_geomean": 8.457176304098438,
+        "decompressor_critical64_cycles_geomean": 37.25036476931463,
+        "decompressor_full_chunk_cycles_geomean": 46.61145963418805,
+        "inputs": 12
+      }
+    ],
+    "suite_geomean_of_geomeans": {
+      "ratio": {
+        "hardware": 3.407456312625975,
+        "cpp": 3.4207404814992395,
+        "delta_pct": -0.38834190857536255
+      },
+      "compressor_bpc": 1.5487793145260165,
+      "decompressor_bpc": 7.209192304507074,
+      "decompressor_critical64_cycles": 45.42910115645187,
+      "decompressor_full_chunk_cycles": 57.51694119241489
+    }
+  }
+}

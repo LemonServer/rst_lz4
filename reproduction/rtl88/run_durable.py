@@ -39,6 +39,8 @@ try:
  if code!=0:raise RuntimeError('RTL driver exited with '+str(code))
  summary=json.loads((out/'full-summary.json').read_text())
  if summary.get('status')!='PASS' or len(summary.get('results',[]))!=88:raise RuntimeError('Full verification is incomplete')
+ state['phase']='auditing';save()
+ subprocess.run([sys.executable,'reproduction/rtl88/acceptance_audit.py'],check=True)
  state['phase']='packaging';save()
  subprocess.run([sys.executable,'reproduction/rtl88/compare_and_pack.py'],check=True)
  archive=folder/'rtl88-results.tar.gz'
